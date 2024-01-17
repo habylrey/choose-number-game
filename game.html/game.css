@@ -1,0 +1,174 @@
+
+@font-face {
+    font-family: outfit;
+    src: url(/font/Outfit-VariableFont_wght.ttf);
+}
+*{
+    box-sizing: border-box;
+    margin: 0 0;
+    font-family: outfit;
+    color: blanchedalmond;
+}
+body{
+    background: rgb(207,154,191);
+    background: radial-gradient(circle, rgba(207,154,191,1) 9%, rgba(82,98,182,1) 100%);
+}
+.header-text{
+    margin-top: 30px;
+    text-align: center;
+    color: blanchedalmond;
+    font-size: 50px;
+}
+.header-about__btn{
+
+    color: blanchedalmond;
+    cursor: pointer;
+    padding: 20px 50px;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    background-color: rgb(255 255 255 / 14%);
+    transition: .2s;
+}
+.header-about__btn:hover{
+    background-color: rgb(255 255 255 / 10%);
+}
+.header-about{
+    font-size: 20px;
+    display: flex;
+    margin: 30px 30px;
+    justify-content: space-around;
+}
+.number{
+    display: flex;
+    justify-content: center;
+}
+.number-box{
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+    width: 236px;
+    height: 236px;
+    justify-content: center;
+    border-radius:30px ;  
+    transition: .4s;
+    background: linear-gradient(137deg, #cf9abf, #5262b6);
+    background-size: 600% 600%;
+    -webkit-animation: AnimationName 4s ease infinite;
+    -moz-animation: AnimationName 4s ease infinite;
+    animation: AnimationName 4s ease infinite;
+}
+.box_red{
+    background: linear-gradient(137deg, #cf9abf, #ff03036b);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 4s ease infinite;
+    -moz-animation: AnimationName 4s ease infinite;
+    animation: AnimationName 4s ease infinite;
+    /* animation: wrongAnswer 1s ease-in 0s 1 normal forwards; */
+}
+.box_blue{
+    background: linear-gradient(137deg, #cf9abf, #3700ff52);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 4s ease infinite;
+    -moz-animation: AnimationName 4s ease infinite;
+    animation: AnimationName 4s ease infinite;
+    /* animation: wrongAnswer 1s ease-in 0s 1 normal forwards; */
+
+}
+.box_correct_answer{
+    background: linear-gradient(137deg, #cf9abf, #77c089);
+    background-size: 400% 400%;
+    -webkit-animation: AnimationName 4s ease infinite;
+    -moz-animation: AnimationName 4s ease infinite;
+    animation: AnimationName 4s ease infinite;
+    animation: correctAnswer 1s ease-in 0s 1 normal forwards;
+}
+
+.user-number__inpt{
+    max-width: 165px;
+    color: gray;
+    padding: 20px 10px;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+
+}
+
+.number-box__icon{
+    color: blanchedalmond;
+    font-size: 60px;
+}
+.user-number{
+    font-size: 20px;
+    margin: 30px 30px;
+    display: flex;
+    justify-content: space-around;
+}
+.pre-header{
+    display: flex;
+    justify-content: right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.user-number__check{
+    background-color: transparent;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.number-box__text{
+    font-size: 20px;
+    color: blanchedalmond;
+}
+
+
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 39%}
+    50%{background-position:100% 62%}
+    100%{background-position:0% 39%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 39%}
+    50%{background-position:100% 62%}
+    100%{background-position:0% 39%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 39%}
+    50%{background-position:100% 62%}
+    100%{background-position:0% 39%}
+}
+@keyframes correctAnswer {
+	0%,
+	100% {
+		transform: rotate(0deg);
+		transform-origin: 50% 100%;
+	}
+
+	10% {
+		transform: rotate(2deg);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: rotate(-4deg);
+	}
+
+	30%,
+	50%,
+	70% {
+		transform: rotate(4deg);
+	}
+
+	80% {
+		transform: rotate(-2deg);
+	}
+
+	90% {
+		transform: rotate(2deg);
+	}
+}
